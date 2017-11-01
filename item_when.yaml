@@ -7,5 +7,5 @@
   tasks:
     - name: Ansible Template Example
       template:
-        src: old_file.j2
-        dest: new_file.j2
+        src: ./old_file.j2
+        dest: ./new_file.j2
