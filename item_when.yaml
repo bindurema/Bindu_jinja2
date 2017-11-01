@@ -1,11 +1,11 @@
 ---
+
 - hosts: all
   vars:
-    a: [1,2,3,4,5]
-    b: [2,3]
+    old_variable: 'Hello world'
+    new_variable: 'hello again'
   tasks:
-    - debug: msg="A includes B"
-      when: a|issuperset(b)
-
-    - debug: msg="B is included in A"
-      when: b|issubset(a)
+    - name: Ansible Template Example
+      template:
+        src: old_file.j2
+        dest: new_file.j2
