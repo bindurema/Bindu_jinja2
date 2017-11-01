@@ -1,5 +1,4 @@
 ---
-
 - hosts: all
   vars:
     old_variable: 'Hello world'
